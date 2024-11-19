@@ -44,6 +44,33 @@ p {
 .section-title span {
 	color: crimson;
 }
+.section-subtitle ::before {
+	font-size: 4rem;
+	font-weight: 300;
+	font-weight: bold;
+	color: rgb(14, 121, 59);
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center; 
+
+}
+.section-subtitle aft {
+	font-size: 4rem;
+	font-weight: 300;
+	font-weight: bold;
+	color: rgb(14, 121, 59);
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	border-style: solid;
+	border-color: rgb(88, 241, 88);
+
+}
+.section-subtitle span{
+	color: crimson;
+}
 
 .cta {
 	display: inline-block;
@@ -325,6 +352,70 @@ p {
 	text-align: left;
 }
 /* End Services Section */
+/* Skills Section */
+#skills .skills {
+	
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 10px auto;
+	padding: 100px 5%;
+	padding: 100px 0;
+}
+#skills .skill-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#skills .skill-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap
+	margin-top 50px;
+}
+#skills .skill-item 
+{  flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#skills .skill-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#skills .skill-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#skills .skill-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#skills .skill-item p {
+    color: white;
+    text-align: left;
+}
+/* End Skills Section */
+
 
 /* Projects section */
 #projects .projects {
@@ -388,8 +479,8 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	background-image: linear-gradient
+	opacity 0.7;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -434,17 +525,6 @@ p {
 	width: 100%;
 	position: relative;
 
-}
-#about .col-left .about-img::after {
-	mix-blend-mode: multiply
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -10;
 }
 /* End About Section */
 
